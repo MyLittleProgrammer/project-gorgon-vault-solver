@@ -34,11 +34,11 @@ const SYMBOL_SVGS: Record<number, React.ReactNode> = {
     </svg>
   ),
 
-  // 2 — ᛈ Perthro: vertical line with angular "> " on right side (cup/trough shape)
+  // 2 — ᛈ Perthro: vertical line with two arms branching outward from the centre (cup open to the right)
   2: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M 14 8 L 14 32 M 14 8 L 26 20 L 14 32"
+        d="M 14 8 L 14 32 M 14 20 L 26 8 M 14 20 L 26 32"
         stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
