@@ -5,7 +5,7 @@ interface SymbolButtonProps {
   symbolId: number;
   selected?: boolean;
   onClick?: () => void;
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "responsive";
   disabled?: boolean;
   className?: string;
   dimmed?: boolean;
@@ -75,9 +75,10 @@ const SYMBOL_SVGS: Record<number, React.ReactNode> = {
 };
 
 const sizeClasses = {
-  sm: "w-10 h-10",
-  md: "w-14 h-14",
-  lg: "w-16 h-16",
+  sm:         "w-10 h-10",
+  md:         "w-14 h-14",
+  lg:         "w-16 h-16",
+  responsive: "w-10 h-10 md:w-14 md:h-14 xl:w-16 xl:h-16",
 };
 
 export function SymbolButton({
@@ -110,7 +111,7 @@ export function SymbolButton({
         className
       )}
     >
-      <div className={cn("w-3/5 h-3/5 flex items-center justify-center")}>
+      <div className="w-3/5 h-3/5 flex items-center justify-center">
         {SYMBOL_SVGS[symbolId]}
       </div>
       {selected && (
@@ -126,7 +127,7 @@ export function SymbolDisplay({
   className,
 }: {
   symbolId: number;
-  size?: "sm" | "md" | "lg";
+  size?: "sm" | "md" | "lg" | "responsive";
   className?: string;
 }) {
   return (
