@@ -23,7 +23,7 @@ interface GuessRecord {
 
 function HexBackground() {
   return (
-    <div className="fixed inset-0 pointer-events-none select-none z-0 bg-[#1a1008]" />
+    <div className="fixed inset-0 pointer-events-none select-none z-0 bg-[#0d0804]" />
   );
 }
 
