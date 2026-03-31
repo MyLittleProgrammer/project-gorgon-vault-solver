@@ -11,65 +11,126 @@ interface SymbolButtonProps {
   dimmed?: boolean;
 }
 
+// Order: Laguz, Berkano, Perthro, Ansuz, Ingwaz, Ehwaz (top row)
+//        Thurisaz, Othala, Sowilo, Naudiz, Dagaz, Gebo (bottom row)
 const SYMBOL_SVGS: Record<number, React.ReactNode> = {
+  // 0 — ᛚ Laguz: vertical line with diagonal branch going down-right from mid-upper area
   0: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L14 32 M14 8 L22 16 M14 20 L20 16" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 18 8 L 18 32 M 18 18 L 27 30"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 1 — ᛒ Berkano: vertical line with two right-pointing humps (upper smaller, lower larger)
   1: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L14 32 M14 8 L24 14 L14 20 M14 20 L24 26 L14 32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 14 8 L 14 32 M 14 8 L 23 14 L 14 20 M 14 20 L 25 26 L 14 32"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 2 — ᛈ Perthro: vertical line with angular "> " on right side (cup/trough shape)
   2: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L14 32 M14 8 L26 8 C26 8 30 14 26 20 L14 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 14 8 L 14 32 M 14 8 L 26 20 L 14 32"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 3 — ᚨ Ansuz: vertical line with two diagonal branches going up-right
   3: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 8 L20 20 L28 8 M12 32 L20 20 L28 32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 18 8 L 18 32 M 18 13 L 27 8 M 18 22 L 27 17"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 4 — ᛜ Ingwaz: diamond with tails extending from top and bottom vertices
   4: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L20 16 L26 8 M14 32 L20 24 L26 32 M14 8 L14 32 M26 8 L26 32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 20 12 L 28 20 L 20 28 L 12 20 L 20 12 M 20 12 L 20 7 M 20 28 L 20 33"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 5 — ᛖ Ehwaz: two vertical lines with two diagonals meeting at the center of the right bar
   5: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L26 32 M26 8 L14 32 M14 20 L26 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 13 8 L 13 32 M 27 8 L 27 32 M 13 20 L 27 8 M 13 20 L 27 32"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 6 — ᚦ Thurisaz: vertical line with a triangular thorn pointing right
   6: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L14 32 M14 32 L26 32 M14 20 L22 20 M14 8 L26 8" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 17 8 L 17 32 M 17 12 L 27 20 L 17 28"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 7 — ᛟ Othala: diamond with two downward legs from the lower-left and lower-right vertices
   7: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L14 32 M26 8 L26 32 M14 8 L26 20 M14 32 L26 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 20 10 L 28 20 L 20 30 L 12 20 L 20 10 M 12 20 L 12 33 M 28 20 L 28 33"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 8 — ᛋ Sowilo: angular lightning-bolt / Z shape
   8: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 20 L20 8 L28 20 L20 32 L12 20 M20 8 L20 32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 27 8 L 13 20 L 27 32"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 9 — ᚾ Naudiz: two vertical lines bridged by a diagonal from upper-left to lower-right
   9: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 8 L20 32 M14 8 L26 20 M26 8 L14 20" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 15 8 L 15 32 M 25 8 L 25 32 M 15 12 L 25 24"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 10 — ᛞ Dagaz: bowtie / hourglass — two triangles sharing a central crossing point
   10: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M14 8 L14 32 M26 8 L26 32 M14 8 L26 20 M14 20 L26 32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 12 8 L 28 8 L 12 32 L 28 32 L 12 8"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
+
+  // 11 — ᚷ Gebo: X shape
   11: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20 8 L14 14 M20 8 L26 14 M14 32 L20 8 L26 32 M14 32 L26 32" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+      <path
+        d="M 12 8 L 28 32 M 28 8 L 12 32"
+        stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+      />
     </svg>
   ),
 };
