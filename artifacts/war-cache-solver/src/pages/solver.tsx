@@ -23,16 +23,7 @@ interface GuessRecord {
 
 function HexBackground() {
   return (
-    <div className="fixed inset-0 overflow-hidden pointer-events-none select-none z-0">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_#1c1407_0%,_#0a0805_60%,_#000_100%)]" />
-      <div
-        className="absolute inset-0 opacity-[0.04]"
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cpath d='M30 2 L58 17 L58 47 L30 62 L2 47 L2 17 Z' fill='none' stroke='%23d97706' strokeWidth='0.5'/%3E%3C/svg%3E")`,
-          backgroundRepeat: "repeat",
-        }}
-      />
-    </div>
+    <div className="fixed inset-0 pointer-events-none select-none z-0 bg-[#1a1008]" />
   );
 }
 
