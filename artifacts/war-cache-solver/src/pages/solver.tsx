@@ -218,7 +218,7 @@ export default function Solver() {
             Ilmari War Cache
           </h1>
           <p className="text-stone-500 text-xs md:text-sm mt-1 tracking-wider">
-            Vault Solver · Knuth Minimax
+            Minotaur Vault Chest Solver
           </p>
         </div>
 
