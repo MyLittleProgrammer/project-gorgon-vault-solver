@@ -24,19 +24,25 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      # 1. Install pnpm (Required for the catalog: protocol)
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Standard current Node version
+          node-version: 20 
 
-      # Navigate into your project folder and install dependencies
+      # 2. Use pnpm install instead of npm install
       - name: Install dependencies
-        run: npm install
+        run: pnpm install
         working-directory: ./artifacts/war-cache-solver
 
-      # Run the Vite build command to compile the .tsx into standard JS
+      # 3. Use pnpm run build instead of npm run build
       - name: Build project
-        run: npm run build
+        run: pnpm run build
         working-directory: ./artifacts/war-cache-solver
 
       - name: Setup Pages
@@ -45,7 +51,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Tell GitHub Pages to ONLY deploy the compiled 'dist' folder
           path: './artifacts/war-cache-solver/dist'
 
       - name: Deploy to GitHub Pages
