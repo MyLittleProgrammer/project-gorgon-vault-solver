@@ -220,6 +220,27 @@ export default function Solver() {
           <p className="text-stone-500 text-xs md:text-sm mt-1 tracking-wider">
             Minotaur Vault Chest Solver
           </p>
+          <p className="text-stone-600 text-xs mt-3 max-w-sm md:max-w-md mx-auto leading-relaxed">
+            This is a solver for Ilmari War Cache Minotaur vault chests based on{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Donald_Knuth"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-700 hover:text-amber-500 underline underline-offset-2 transition-colors"
+            >
+              Donald Knuth
+            </a>
+            's five guess algorithm for solving the game{" "}
+            <a
+              href="https://en.wikipedia.org/wiki/Mastermind_(board_game)"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-700 hover:text-amber-500 underline underline-offset-2 transition-colors"
+            >
+              Mastermind
+            </a>
+            .
+          </p>
         </div>
 
         {/* ── PHASE: Symbol Selection ───────────────────────────────────────── */}
