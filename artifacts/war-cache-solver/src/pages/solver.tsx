@@ -342,17 +342,27 @@ export default function Solver() {
               </button>
             </div>
 
-            {/* Active symbols reminder */}
-            <div className="bg-stone-900/60 border border-stone-800 rounded px-3 py-2 flex items-center gap-1 md:gap-2 flex-wrap">
-              <span className="text-stone-500 text-xs">Active:</span>
-              {selectedSymbols.map((id) => (
-                <SymbolDisplay
-                  key={id}
-                  symbolId={id}
-                  size="responsive"
-                  className="border-stone-700"
-                />
-              ))}
+            {/* Active runes reminder — full grid, active ones highlighted */}
+            <div className="bg-stone-900/80 border border-stone-700 rounded-lg p-4 md:p-6 xl:p-8 flex flex-col gap-4 md:gap-5 xl:gap-6 backdrop-blur-sm">
+              <p className="text-stone-500 text-xs md:text-sm">
+                Active runes for this vault:
+              </p>
+              <div className="grid grid-cols-6 gap-2 md:gap-3 xl:gap-4 justify-items-center">
+                {ALL_SYMBOL_IDS.map((id) => (
+                  <div key={id} className="flex flex-col items-center gap-1">
+                    <SymbolButton
+                      symbolId={id}
+                      selected={selectedSymbols.includes(id)}
+                      disabled
+                      size="responsive"
+                      dimmed={!selectedSymbols.includes(id)}
+                    />
+                    <span className="text-stone-600 text-[9px] md:text-[10px] xl:text-xs text-center leading-tight w-10 md:w-12 xl:w-14 truncate">
+                      {SYMBOL_NAMES[id]}
+                    </span>
+                  </div>
+                ))}
+              </div>
             </div>
 
             {/* Guess history */}

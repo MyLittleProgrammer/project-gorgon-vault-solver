@@ -67,7 +67,8 @@ export function SymbolButton({
           ? "border-amber-500 bg-amber-950/60 text-amber-400 shadow-[0_0_12px_rgba(245,158,11,0.4)]"
           : "border-stone-600 bg-stone-800/80 text-stone-400",
         !disabled && !selected && "hover:border-amber-700 hover:text-amber-500 hover:bg-stone-700/80 cursor-pointer",
-        disabled && "cursor-not-allowed opacity-50",
+        disabled && "cursor-default",
+        disabled && !selected && "opacity-50",
         dimmed && !selected && "opacity-30",
         className
       )}
