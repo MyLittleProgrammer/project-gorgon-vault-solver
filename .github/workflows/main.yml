@@ -24,7 +24,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # 1. Install pnpm (Required for the catalog: protocol)
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -35,12 +34,9 @@ jobs:
         with:
           node-version: 20 
 
-      # 2. Use pnpm install instead of npm install
       - name: Install dependencies
         run: pnpm install
-        working-directory: ./artifacts/war-cache-solver
 
-      # 3. Use pnpm run build instead of npm run build
       - name: Build project
         run: pnpm run build
         working-directory: ./artifacts/war-cache-solver
