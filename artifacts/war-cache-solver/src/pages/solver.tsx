@@ -486,7 +486,7 @@ export default function Solver() {
 
         {/* Footer */}
         <p className="text-center text-stone-700 text-xs">
-          This is an unofficial fan project and is not affiliated with or endorsed by Elder Game / Project Gorgon.
+          This is a fan-made tool for Project Gorgon, an indie MMORPG by Elder Game, LLC. This is not affiliated with or endorsed by Elder Game, LLC.
         </p>
       </div>
     </div>
