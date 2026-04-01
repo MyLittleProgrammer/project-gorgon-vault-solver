@@ -64,11 +64,11 @@ const SYMBOL_SVGS: Record<number, React.ReactNode> = {
     </svg>
   ),
 
-  // 5 — ᛖ Ehwaz: two vertical lines with two diagonals meeting at the center of the right bar
+  // 5 — ᛖ Ehwaz: two vertical lines with two parallel diagonals (top-left→centre-right, centre-left→bottom-right)
   5: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M 13 8 L 13 32 M 27 8 L 27 32 M 13 20 L 27 8 M 13 20 L 27 32"
+        d="M 13 8 L 13 32 M 27 8 L 27 32 M 13 8 L 27 20 M 13 20 L 27 32"
         stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
