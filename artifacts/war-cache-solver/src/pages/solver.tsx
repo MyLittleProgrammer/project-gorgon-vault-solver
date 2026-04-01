@@ -248,7 +248,7 @@ export default function Solver() {
             >
               Donald Knuth
             </a>
-            's min-max algorithm for the game{" "}
+            's min-max algorithm for{" "}
             <a
               href="https://en.wikipedia.org/wiki/Mastermind_(board_game)"
               target="_blank"
