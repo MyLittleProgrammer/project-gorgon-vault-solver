@@ -486,8 +486,7 @@ export default function Solver() {
 
         {/* Footer */}
         <p className="text-center text-stone-700 text-xs">
-          Project Gorgon · Ilmari War Cache · {CODE_LENGTH}-rune combination
-          from {ACTIVE_SYMBOL_COUNT} active runes
+          This is an unofficial fan project and is not affiliated with or endorsed by Elder Game / Project Gorgon.
         </p>
       </div>
     </div>
