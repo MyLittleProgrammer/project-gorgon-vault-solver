@@ -93,7 +93,7 @@ function FeedbackInput({ onSubmit }: { onSubmit: (f: Feedback) => void }) {
       </div>
 
       <p className="text-stone-500 text-xs">
-        Example: game shows "1,2" → Exact = 1, Partial = 2
+        Tip: In game, you'll see feedback to your guess like, (1, 2) which would mean 1 of the symbols in your guess is exactly correct, and 2 more of the symbols are part of the answer, but are in the wrong spot.
       </p>
     </form>
   );
