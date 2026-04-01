@@ -72,7 +72,10 @@ export function SymbolButton({
         className
       )}
     >
-      <span className={cn("flex items-center justify-center w-full h-full leading-none select-none", textSizeClasses[size])}>
+      <span
+        className={cn("flex items-center justify-center w-full h-full leading-none select-none", textSizeClasses[size])}
+        style={{ transform: "translateY(-10%)" }}
+      >
         {RUNE_CHARS[symbolId]}
       </span>
       {selected && (
@@ -99,7 +102,10 @@ export function SymbolDisplay({
         className
       )}
     >
-      <span className={cn("flex items-center justify-center w-full h-full leading-none select-none", textSizeClasses[size])}>
+      <span
+        className={cn("flex items-center justify-center w-full h-full leading-none select-none", textSizeClasses[size])}
+        style={{ transform: "translateY(-10%)" }}
+      >
         {RUNE_CHARS[symbolId]}
       </span>
     </div>
