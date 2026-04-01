@@ -317,17 +317,17 @@ export default function Solver() {
           <div className="flex flex-col gap-3 md:gap-4 xl:gap-5">
 
             {/* Status bar */}
-            <div className="bg-stone-900/80 border border-stone-700 rounded-lg px-3 md:px-4 py-2 md:py-3 flex items-center justify-between backdrop-blur-sm">
+            <div className="bg-stone-900/80 border border-stone-700 rounded-lg px-3 md:px-4 py-2 md:py-3 flex items-center justify-between gap-3 backdrop-blur-sm">
               <div className="flex gap-3 md:gap-4 text-xs md:text-sm">
                 <span className="text-stone-400">
-                  Guess:{" "}
+                  Guesses Remaining:{" "}
                   <span className="text-amber-400 font-bold">
-                    {completedGuesses} / {MAX_GUESSES}
+                    {MAX_GUESSES - completedGuesses} / {MAX_GUESSES}
                   </span>
                 </span>
                 {phase === "solving" && (
                   <span className="text-stone-400">
-                    Remaining:{" "}
+                    Combinations Remaining:{" "}
                     <span className="text-amber-400 font-bold">
                       {remainingCount}
                     </span>
@@ -336,7 +336,7 @@ export default function Solver() {
               </div>
               <button
                 onClick={reset}
-                className="text-stone-500 hover:text-stone-300 text-xs transition-colors"
+                className="shrink-0 px-3 md:px-4 py-1.5 bg-amber-700 hover:bg-amber-600 text-amber-100 text-xs md:text-sm font-semibold rounded transition-colors border border-amber-500 cursor-pointer"
               >
                 ← Start Over
               </button>
