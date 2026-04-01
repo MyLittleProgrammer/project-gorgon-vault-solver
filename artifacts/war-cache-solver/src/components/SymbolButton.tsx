@@ -94,11 +94,11 @@ const SYMBOL_SVGS: Record<number, React.ReactNode> = {
     </svg>
   ),
 
-  // 8 — ᛋ Sowilo: angular lightning-bolt / Z shape
+  // 8 — ᛋ Sowilo: angular S / Z — top horizontal, crossing diagonal, bottom horizontal
   8: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M 27 8 L 13 20 L 27 32"
+        d="M 12 8 L 28 8 M 28 8 L 12 32 M 12 32 L 28 32"
         stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
