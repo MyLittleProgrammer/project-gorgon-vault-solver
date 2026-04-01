@@ -227,11 +227,11 @@ export default function Solver() {
           <div className="bg-stone-900/80 border border-stone-700 rounded-lg p-4 md:p-6 xl:p-8 flex flex-col gap-4 md:gap-5 xl:gap-6 backdrop-blur-sm">
             <div>
               <h2 className="text-amber-300 font-semibold text-base md:text-lg xl:text-xl">
-                Step 1: Identify Active Symbols
+                Step 1: Identify Active Runes
               </h2>
               <p className="text-stone-400 text-xs md:text-sm mt-1">
                 Select the{" "}
-                <span className="text-amber-400 font-semibold">6 symbols</span>{" "}
+                <span className="text-amber-400 font-semibold">6 runes</span>{" "}
                 you believe are active in this vault.
               </p>
             </div>
@@ -422,7 +422,7 @@ export default function Solver() {
                 </h3>
                 <p className="text-stone-400 text-sm mt-1">
                   Could not find the combination. Check that your selected
-                  symbols and feedback are correct.
+                  runes and feedback are correct.
                 </p>
                 <button
                   onClick={reset}
@@ -437,8 +437,8 @@ export default function Solver() {
 
         {/* Footer */}
         <p className="text-center text-stone-700 text-xs">
-          Project Gorgon · Ilmari War Cache · {CODE_LENGTH}-symbol combination
-          from {ACTIVE_SYMBOL_COUNT} active symbols
+          Project Gorgon · Ilmari War Cache · {CODE_LENGTH}-rune combination
+          from {ACTIVE_SYMBOL_COUNT} active runes
         </p>
       </div>
     </div>
