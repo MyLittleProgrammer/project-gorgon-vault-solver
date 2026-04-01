@@ -221,7 +221,25 @@ export default function Solver() {
             Minotaur Vault Chest Solver
           </p>
           <p className="text-stone-600 text-xs mt-3 max-w-sm md:max-w-md mx-auto leading-relaxed">
-            This is a solver for Ilmari War Cache Minotaur vault chests based on{" "}
+            This is a solver for{" "}
+            <a
+              href="https://wiki.projectgorgon.com/wiki/Safecracking"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-700 hover:text-amber-500 underline underline-offset-2 transition-colors"
+            >
+              Minotaur Vault Chests
+            </a>
+            {" "}in{" "}
+            <a
+              href="https://store.steampowered.com/app/342940/Project_Gorgon/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-700 hover:text-amber-500 underline underline-offset-2 transition-colors"
+            >
+              Project Gorgon
+            </a>
+            , based on{" "}
             <a
               href="https://en.wikipedia.org/wiki/Donald_Knuth"
               target="_blank"
