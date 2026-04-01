@@ -104,11 +104,11 @@ const SYMBOL_SVGS: Record<number, React.ReactNode> = {
     </svg>
   ),
 
-  // 9 — ᚾ Naudiz: two vertical lines bridged by a diagonal from upper-left to lower-right
+  // 9 — ᚾ Naudiz: single vertical line with a diagonal crossing stroke
   9: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M 15 8 L 15 32 M 25 8 L 25 32 M 15 12 L 25 24"
+        d="M 20 8 L 20 32 M 12 14 L 28 26"
         stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
