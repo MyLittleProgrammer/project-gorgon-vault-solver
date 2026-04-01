@@ -72,7 +72,7 @@ export function SymbolButton({
         className
       )}
     >
-      <span className={cn("leading-none select-none", textSizeClasses[size])}>
+      <span className={cn("flex items-center justify-center w-full h-full leading-none select-none", textSizeClasses[size])}>
         {RUNE_CHARS[symbolId]}
       </span>
       {selected && (
@@ -99,7 +99,7 @@ export function SymbolDisplay({
         className
       )}
     >
-      <span className={cn("leading-none select-none", textSizeClasses[size])}>
+      <span className={cn("flex items-center justify-center w-full h-full leading-none select-none", textSizeClasses[size])}>
         {RUNE_CHARS[symbolId]}
       </span>
     </div>
