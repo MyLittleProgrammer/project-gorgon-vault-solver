@@ -220,7 +220,7 @@ export default function Solver() {
           <p className="text-stone-500 text-xs md:text-sm mt-1 tracking-wider">
             Minotaur Vault Chest Solver
           </p>
-          <p className="text-stone-600 text-xs mt-3 max-w-[365px] md:max-w-[426px] mx-auto leading-relaxed">
+          <p className="text-stone-600 text-xs mt-3 max-w-sm md:max-w-md mx-auto leading-relaxed">
             This is a solver for{" "}
             <a
               href="https://wiki.projectgorgon.com/wiki/Safecracking"
