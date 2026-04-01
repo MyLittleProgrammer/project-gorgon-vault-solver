@@ -114,11 +114,11 @@ const SYMBOL_SVGS: Record<number, React.ReactNode> = {
     </svg>
   ),
 
-  // 10 — ᛞ Dagaz: bowtie / hourglass — two triangles sharing a central crossing point
+  // 10 — ᛞ Dagaz: two vertical bars with crossing diagonals between them (squared infinity / ◁▷)
   10: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M 12 8 L 28 8 L 12 32 L 28 32 L 12 8"
+        d="M 12 8 L 12 32 M 28 8 L 28 32 M 12 8 L 28 32 M 28 8 L 12 32"
         stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
