@@ -487,7 +487,7 @@ export default function Solver() {
       </div>
 
       {/* Footer — pinned to bottom of page */}
-      <p className="relative z-10 mt-auto pt-6 pb-2 text-center text-stone-700 text-xs px-4">
+      <p className="relative z-10 mt-auto pt-6 pb-2 text-center text-stone-700 text-xs w-full max-w-sm md:max-w-xl xl:max-w-2xl px-3 md:px-4 xl:px-8">
         This is a fan-made tool for Project Gorgon, an indie MMORPG by Elder Game, LLC. This is not affiliated with or endorsed by Elder Game, LLC.
       </p>
     </div>
