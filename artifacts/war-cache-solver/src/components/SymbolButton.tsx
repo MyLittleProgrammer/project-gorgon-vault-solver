@@ -84,11 +84,11 @@ const SYMBOL_SVGS: Record<number, React.ReactNode> = {
     </svg>
   ),
 
-  // 7 — ᛟ Othala: diamond with two downward legs from the lower-left and lower-right vertices
+  // 7 — ᛟ Othala: diamond with two legs splaying outward from the left and right vertices
   7: (
     <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
-        d="M 20 10 L 28 20 L 20 30 L 12 20 L 20 10 M 12 20 L 12 33 M 28 20 L 28 33"
+        d="M 20 8 L 29 20 L 20 30 L 11 20 L 20 8 M 11 20 L 8 33 M 29 20 L 32 33"
         stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
       />
     </svg>
