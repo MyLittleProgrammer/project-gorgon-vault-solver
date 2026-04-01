@@ -50,7 +50,7 @@ function FeedbackInput({ onSubmit }: { onSubmit: (f: Feedback) => void }) {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3">
       <p className="text-stone-400 text-xs md:text-sm">
-        Enter the feedback from the game:
+        Enter feedback from the vault chest:
       </p>
 
       <div className="flex gap-3 md:gap-4 items-end flex-wrap">
