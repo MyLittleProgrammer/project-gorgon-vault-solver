@@ -487,9 +487,17 @@ export default function Solver() {
       </div>
 
       {/* Footer — pinned to bottom of page */}
-      <p className="relative z-10 mt-auto pt-6 pb-2 text-center text-stone-700 text-xs w-full max-w-sm md:max-w-xl xl:max-w-2xl px-3 md:px-4 xl:px-8">
-        This is a fan-made tool for Project Gorgon, an indie MMORPG by Elder Game, LLC. This is not affiliated with or endorsed by Elder Game, LLC.
-      </p>
+      <div className="relative z-10 mt-auto pt-6 pb-2 text-center text-stone-700 text-xs w-full max-w-sm md:max-w-xl xl:max-w-2xl px-3 md:px-4 xl:px-8 flex flex-col items-center gap-1">
+        <p>This is a fan-made tool for Project Gorgon, an indie MMORPG by Elder Game, LLC. This is not affiliated with or endorsed by Elder Game, LLC.</p>
+        <a
+          href="https://github.com/MyLittleProgrammer/project-gorgon-vault-solver"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-stone-600 hover:text-amber-500 transition-colors underline underline-offset-2"
+        >
+          View source on GitHub
+        </a>
+      </div>
     </div>
   );
 }
