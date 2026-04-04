@@ -47,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './artifacts/war-cache-solver/dist'
+          path: './artifacts/war-cache-solver/dist/public'
 
       - name: Deploy to GitHub Pages
         id: deployment
